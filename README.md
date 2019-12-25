@@ -1,1 +1,7 @@
 # BDT-Model-and-LMM-Model
+
+The Libor Market Model (LMM) is an interest rate model based on evolving Libor market forward rates. In contrast to models that evolve the instantaneous short rate (i.e. Hull-White, Black-Derman-Toy models) or instantaneous forward rates (i.e. Heath-Jarrow-Morton model), which are not directly observable in the market, the objects modeled using LMM are market-observable quantities (LIBOR forward rates). This makes LMM popular with market practitioners. Another feature that makes the LMM popular is that it is consistent with the market standard approach for pricing caps using Black’s formula.
+
+The LMM can be used to price any financial product whose pay-off can be decomposed into a set of forward rates (i.e. caplets, Bermudan swaptions, and other complicated interest rate derivatives). It assumes that the evolution of each forward rate is lognormal. Each forward rate has a time dependent volatility and time dependent correlations with the other forward rates. After specifying these volatilities and correlations, the forward rates can be evolved using Monte Carlo simulation. Expectations of cash flows are then calculated in order to determine the fair value of an instrument.
+
+This project implements Black-Derman-Toy model (BDT) amd Libor Market Model (LMM) seperately to price different interest rate derivatives and compare the results of these two model.
